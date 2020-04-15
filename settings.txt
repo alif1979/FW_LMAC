@@ -1,0 +1,105 @@
+
+# ----------------------------------------------------------------------------------------
+#                                        WARNING                                         #
+# ----------------------------------------------------------------------------------------
+# MODIFY VALUES AS PER YOUR CONVINIENCE AND DESIRED                                      #
+# DO NOT CHANGE VARIABLE_NAME.                                                           #
+# MAKE CHANGE IN LINE ITSELF, TRY NOT TO SPLIT IN MULTIPLE LINES.                        #
+# REFRAIN DOING CHANGE AND KEEP STANDARD IF YOU ARE NOT SURE WHAT YOU ARE DOING          #
+# ----------------------------------------------------------------------------------------
+
+
+# ----------------------------------------------------------------------------------------
+# DISPLAY OPTION WINDOW --------------------------------------
+SHOW_MENU = True
+TASK_COMPLETE_NOTICE = True
+
+# ----------------------------------------------------------------------------------------
+# INPUT / REQUESTS -------------------------------------------
+CAPTURE_FOLDER = 'capture'
+LOG_EXTN = '.log'                                # extension of captured log files (eg: ".log")
+REQUEST_FILE = 'sample/request.xlsx'
+MOP_EXCEL_TEMPLATE = 'sample/mop_template.xlsx'
+
+
+# ----------------------------------------------------------------------------------------
+# OUTPUT --------------------------------------------
+ONSCREEN_DISPLAY = False
+SAVE_TO_FILE = True
+MOP_EXCEL_OUTPUT = True
+OUTPUT_FOLDER = 'output'
+OUTPUT_FILE_EXTENSION = '.txt'
+CLUB_OUTPUT_FOR_ALL_DEVICE = False
+LINENO_ON_DEL = False					## Enabling it will impact MOP pre-post comparision
+
+
+# ----------------------------------------------------------------------------------------
+# LOGGING --------------------------------------------
+LOG_FOLDER = 'log'
+LOG_WARNING = True
+LOG_LEVEL_MIN = 20
+
+# ----------------------------------------------------------------------------------------
+# OPTIONS --------------------------------------------
+ACL_BASE = "SOURCE"
+ICMP = ('echo', 'echo-reply')
+USE_SOURCE_NAT_IP = True
+USE_DESTINATION_NAT_IP = True
+
+# ----------------------------------------------------------------------------------------
+# LIST OF PROTOCOLS ----------------------
+PROTOCOLS = ('tcp', 'udp', 'icmp', 'ip', 'scp')
+
+
+# ----------------------------------------------------------------------------------------
+# WELL KNOWN PORTS AND ITS ALIASES ----------------------
+WELL_KNOWN_PORTS = {
+	'7': 'echo', 
+	'22': 'ssh', 
+	'23': 'telnet', 
+	'80': 'www', 
+	'443': 'https', 
+	}
+
+
+# ----------------------------------------------------------------------------------------
+# EXCEPTIONAL NAMING ALIAS ------------------------------------
+ALIAS_DICT = {
+	"sg-proxy": "gsni",	
+	}
+
+
+# ----------------------------------------------------------------------------------------
+# COMMANDS TO CAPTURE --------------------------------------------
+CMDS_SHOW_RTE = ('sh route', 'show route')
+CMDS_SHOW_RUN = ('sh run', 'show run' )
+CMDS_SHOW_ACG = ('sh run access-group', 'show run access-group', 'sh run access-gr')
+CMDS_SHOW_ACL = ('show access-list | ex (^ )', 'sh access-list | ex (^ )')
+
+
+# ----------------------------------------------------------------------------------------
+# FORMATTING / VIEWS ----------------------------------
+# change value(s) to customize output -----------------
+LINE_80 = "_"*80 
+DOUBLELINE_80 = "="*80
+HASH_80 = "#"*80
+EXCLAMATION_80 = "!"*80
+PUNCTUATION_80 = "~"*80
+STAR_80 = "*"*80
+FIREWALL_NAME_BANNER_PREFIX = "! ~~~ CONFIGURATION CHANGES FOR FIREWALL ["
+FIREWALL_NAME_BANNER_SUFFIX = "] ~~~ !"
+EXCEL_ROW_BANNER_PREFIX = "! ~~~ RESULT OF EXCEL ROW ["
+EXCEL_ROW_BANNER_PREFIX1 = " ~~~ for Excel Row ["
+EXCEL_ROW_BANNER_SUFFIX = "] ~~~ !"
+ADD_REQUEST_BANNER = "! ~~~ CHANGE SCRIPT FOR ADD REQUEST ~~~ !"
+DEL_REQUEST_BANNER = "! ~~~ CHANGE SCRIPT FOR DEL REQUEST ~~~ !"
+ADD_ROLLBACK_BANNER = "! ~~~ ROLLBACK SCRIPT FOR ADD REQUEST ~~~ !"
+DEL_ROLLBACK_BANNER = "! ~~~ ROLLBACK SCRIPT FOR DEL REQUEST ~~~ !"
+EXCEPTIONS_BANNER = "! ~~~ EXCEPTIONS ~~~ !"
+OBJ_GRP_CHG_BANNER = "! ~~~ OBJECT GROUP MODIFICATION ~~~ !"
+OBJ_GRP_RBK_BANNER = "! ~~~ OBJECT GROUP MODIFICATION ROLLBACK ~~~ !"
+
+
+# ----------------------------------------------------------------------------------------
+# END
+# ----------------------------------------------------------------------------------------
